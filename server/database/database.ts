@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/interface-name-prefix
 import { debug } from 'debug';
 import { child, get, DatabaseReference } from 'firebase/database';
 
@@ -64,6 +65,8 @@ export class HnDatabase {
             id: item.id,
             parent: item.parent,
             submitterId: item.by,
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
             text: item.text,
           });
 
