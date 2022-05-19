@@ -203,7 +203,7 @@ app
 
     /* END EXPRESS ROUTES */
 
-    warmCache(db, cache, feedService);
+    // warmCache(db, cache, feedService);
 
     expressServer.listen(APP_PORT, () => {
       console.log(`> App listening on port ${APP_PORT}`);

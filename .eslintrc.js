@@ -4,7 +4,7 @@ module.exports = {
     es6: true,
     node: true,
   },
-  ignorePatterns: ['node_modules', '**/__mocks__*', '**/__tests__*', '**/*.spec.*'],
+  ignorePatterns: ['*','node_modules', '**/__mocks__*', '**/__tests__*', '**/*.spec.*'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: 'tsconfig.json',
@@ -38,6 +38,8 @@ module.exports = {
     '@typescript-eslint/no-unsafe-call': 'off',
     '@typescript-eslint/no-unsafe-return': 'off',
     '@typescript-eslint/require-await': 'off',
+    '@typescript-eslint/no-floating-promises': 'off',
+    '@typescript-eslint/interface-name-prefix': 'off',
     // '@typescript-eslint/adjacent-overload-signatures': 'warn',
     // '@typescript-eslint/array-type': 'warn',
     // '@typescript-eslint/ban-types': 'warn',
